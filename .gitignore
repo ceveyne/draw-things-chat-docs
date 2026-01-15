@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+
+!README.md
+!LICENSE
+
+!docs/
+!docs/images/
+!docs/images/**
