@@ -19,11 +19,27 @@
 - [Special Features](#special-features)
 - [Known Issues and Solutions](#known-issues-and-solutions)
 - [Missing Features](#missing-features)
+- [What's next?](#whats-next)
+- [Changelog](#changelog)
 - [License](#license)
 
 <a id="key-benefits-and-use-cases"></a>
 
-## Key Benefits and Use Cases
+## Key Benefits
+
+As it's questionable if simply plugging Draw Things into LM Studio might be of any benefit, enlightening your vision-capable Agent-Model with your generated images can sometimes be... surprising.
+
+**LM Studio Plugin: Draw Things supported by vision-capable Agents**
+
+- Image-based "Reasoning" approach for vision-capable LLMs
+- "Agentic" text2image, image2image & edit
+- All local
+- Optional: distributed computing across your local network
+- Maintain your favourite settings, models, LoRAs, etc., as custom presets to ensure the desired qualities of your Draw Things artwork.
+
+![what_was_i_made_for](docs/images/what_was_i_made_for.jpeg)
+
+## Use Cases
 
 Let me have a quick think... I'm sure there were some...
 
@@ -95,7 +111,7 @@ The models **actually** used in the basic settings are:
 | ------------- | -------------------------------------------- | ---------------------------- | ------------------------------- | ------------------------- | ----------------------------- |
 | `text2image`  | z-image (`z_image_turbo_1.0_q8p.ckpt`)       | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_2512_bf16_q8p.ckpt` | `flux_1_schnell_q8p.ckpt` | — (via `custom_configs.json`) |
 | `image2image` | z-image (`z_image_turbo_1.0_q8p.ckpt`)       | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_2512_bf16_q8p.ckpt` | —                         | — (via `custom_configs.json`) |
-| `edit`        | qwen-image (`qwen_image_edit_2511_q6p.ckpt`) | —                            | `qwen_image_edit_2511_q6p.ckpt` | —                         | — (via `custom_configs.json`) |
+| `edit`        | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | —                            | `qwen_image_edit_2511_q6p.ckpt` | —                         | — (via `custom_configs.json`) |
 
 The basic idea is: If _no_ model is explicitly selected, a proven, fast model is used. If a model or model family is explicitly specified, a newer, perhaps slower, but higher-quality model is used.
 
@@ -367,6 +383,25 @@ A software-technical problem for this project is a missing feature in the LM Stu
 Our workaround is called: `vision-capability-priming`.
 
 Here lies the _actual_ solution: https://github.com/lmstudio-ai/lmstudio-js/issues/459
+
+<a id="whats-next"></a>
+
+## What's next?
+
+![where_do_we_go_now](docs/images/where_do_we_go_now.jpeg)
+
+I'd say:
+
+- "Hhomen meorspany incloonto Concction tee" is done. Check ✅.
+- Moving on to: "Thes paip inomes on a conispöating".
+
+---
+
+<a id="changelog"></a>
+
+## Changelog
+
+See [CHANGELOG.md](docs/CHANGELOG.md) for version history and release notes.
 
 <a id="license"></a>
 
