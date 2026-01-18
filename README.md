@@ -368,7 +368,7 @@ TL;DR: If you have the resources, take _large_ models (30B and up); a large cont
 
 ### Visualiser
 
-Current models achieve some amazing things. Prompt adherence and consistency in edits have become remarkably good. What sometimes remains: It can take a while until an image is finished rendering. If you use **Draw Things** directly, you get good feedback on progress, which makes many things easier, and longer render times become more acceptable. In the chat context, you only see the spinning wheel from the tool call. Tolerance for longer render times can be lower as a result.
+Current models achieve some amazing things. Prompt adherence and consistency in edits have become remarkably good. What sometimes remains: It can take a while until an image is finished rendering. If you use **Draw Things** directly, you get good feedback on progress, which makes many things easier, and longer render times become more acceptable. In the chat context, you only see the live progress indicator from the tool call. Tolerance for longer render times can be lower as a result.
 
 Models that are _fast_ therefore have an advantage for our chat application context. These are not always the models that are _new_. Some very good and very new models like Flux.2-dev hardly stand a chance in our use case for this reason: the render times are simply too long, and that disturbs the flow.
 

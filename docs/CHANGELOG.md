@@ -1,8 +1,6 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+Notable changes to this project will be documented in this file.
 
 ## Distribution
 
@@ -11,7 +9,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
-## [0.1.0] - 2026-01-17 - Revision 3
+## [0.1.0] - 2026-01-18 Revision 4
+
+### Added
+
+- Live progress indicator (gRPC only): Image generation now shows real-time progress (e.g., "Step 12/20 (60%)") in the chat UI
+- Explicit hard limit validation for width/height parameters with clear error messages
+
+### Changed
+
+- Width/height descriptions now include maximum allowed values
+- Dimension validation: Requests exceeding limits are now rejected with actionable error messages instead of silent clamping
+
+### Fixed
+
+- HTTP img2img: imageFormat shorthand no longer overrides explicitly provided width/height values (parity with gRPC)
+
+## [0.1.0] - 2026-01-17 Revision 3
 
 ### Changed
 
