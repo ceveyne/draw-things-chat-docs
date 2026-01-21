@@ -5,7 +5,23 @@ Notable changes to this project will be documented in this file.
 ## Distribution
 
 - **Source Code:** [LM Studio Hub](https://lmstudio.ai/ceveyne/draw-things-chat/revisions)
-- **Documentation:** [GitHub Repository](https://github.com/ceveyne/draw-things-chat)
+- **Documentation:** [GitHub Repository](https://github.com/ceveyne/draw-things-chat-docs)
+
+---
+
+## [0.1.0] - 2026-01-21 Revision 5
+
+### Added
+
+- Added support for [draw_things_index](https://lmstudio.ai/ceveyne/draw-things-index/), an LM Studio Plugin to search through your Draw Things generation history.
+
+### Changed
+
+- Changed Agent behavior to avoid generations or tool results being displayed more than just once
+
+### Fixed
+
+- Small stability and error handling improvements
 
 ---
 

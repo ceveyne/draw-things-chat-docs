@@ -121,6 +121,8 @@ The basic idea is: If _no_ model is explicitly selected, a proven, fast model is
 
 All images you attach and all images you generate can be selected for further processing. Furthermore, you can also research images to do something with them. `brave_image_search` is supported as a demo.
 
+If you want to continue working on previously generated images but have trouble finding them again, try [draw_things_index](https://github.com/ceveyne/draw-things-index-docs), an LM Studio Plugin to search through your Draw Things generation history.
+
 ### When It Has To Be Good
 
 If you notice you have to support the Agent model with concrete instructions like: "Use `edit` with the default model and the following prompt: ...", then you will likely get an image result that shows what you want.
