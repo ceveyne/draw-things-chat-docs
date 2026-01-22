@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-01-22 Revision 7
+
+### Fixed
+
+- Fixed a build issue that excluded necessary files from being uploaded
+
+---
+
 ## [0.1.0] - 2026-01-22 Revision 6
 
 ### Changed
