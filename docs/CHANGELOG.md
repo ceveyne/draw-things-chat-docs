@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-01-22 Revision 6
+
+### Changed
+
+- Improved Project file parser for [draw-things-index](https://lmstudio.ai/ceveyne/draw-things-index/)
+
+---
+
 ## [0.1.0] - 2026-01-21 Revision 5
 
 ### Added
