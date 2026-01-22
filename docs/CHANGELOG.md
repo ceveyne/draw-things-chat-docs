@@ -9,6 +9,18 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-01-22 Revision 8
+
+### Changed
+
+- Improved source display in draw-things-index results: Chat IDs now shown completely, project names displayed without file extension
+
+### Fixed
+
+- Fixed picture indexing across multiple queries: `p` IDs are now stable per chat (including draw-things-index `project://` results) and no longer reset to `p1` per query.
+
+---
+
 ## [0.1.0] - 2026-01-22 Revision 7
 
 ### Fixed
