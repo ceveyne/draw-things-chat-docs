@@ -9,6 +9,18 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-01-23 Revision 9
+
+### Added
+
+- Added `FLUX.2 [klein] 9B (6-bit)` as new default for flux model family
+
+### Fixed
+
+- Fixed Agent behavior to avoid generations or tool results being displayed more than just once
+
+---
+
 ## [0.1.0] - 2026-01-22 Revision 8
 
 ### Changed
