@@ -59,6 +59,14 @@ Another use case is researching images and using them for further editing:
 
 ![brave_image_search(3)](<docs/images/brave_image_search(3).jpeg>)
 
+If you additionally install my ["Metadata Query" plugin **draw-things-index**](https://github.com/ceveyne/draw-things-index-docs), you can use `generate_image()` not only to reference the images from the current chat, but in principle _all_ locally generated images - partly also from other tools such as ComfyUI.
+
+![index_image_draw-things-chat_comfyui](docs/images/index_image_draw-things-chat_comfyui.jpeg)
+
+![index_image_review_image](docs/images/index_image_review_image.jpeg)
+
+![index_image_review_image_generate_image](docs/images/index_image_review_image_generate_image.jpeg)
+
 ⚠️ Before the fun part begins, a quick **note**: Use of the _basic settings_ will generate substantially simpler images than if an experienced person were using **Draw Things** directly.
 
 With this quick start, you have limited access to the myriad of settings in **Draw Things** and must live with the "Recommended Settings" for the respective models.
@@ -87,7 +95,7 @@ If you are bored but also lacking your own image ideas, you can try the **Firepl
 
 ## What You Can Expect
 
-In terms of maturity, this plugin is somewhere around pre-alpha. A study, a demo, a prototype, a first draft. Hopefully good enough to test the concept. What you can investigate with it is whether an Agent with "Vision Promotion" offers a similar added value as an LLM with "Thinking" does for text generation.
+In terms of maturity, this plugin is somewhere around early-beta. A study, a demo, a prototype, a first draft. Hopefully good enough to test the concept. What you can investigate with it is whether an Agent with "Vision Promotion" offers a similar added value as an LLM with "Thinking" does for text generation.
 
 <a id="disclaimer"></a>
 
@@ -171,7 +179,7 @@ The setup requires a certain amount of patience and concentration, and to be abl
 ✅ "name": "Qwen Image 2512 (BF16)", "file": "qwen_image_2512_bf16_q8p.ckpt"  
 ✅ "name": "Qwen Image Edit 2509 (6-bit)", "file": "qwen_image_edit_2509_q6p.ckpt"  
 ✅ "name": "Qwen Image Edit 2511 (6-bit)", "file": "qwen_image_edit_2511_q6p.ckpt"  
-✅ "name": "FLUX.1 [schnell]", "file": "flux_1_schnell_q8p.ckpt"
+✅ "name": "FLUX.2 [klein] 9B (6-bit)", "file": "flux_2_klein_9b_q6p.ckpt"
 
 ### Additionally, you need the following LoRAs:
 

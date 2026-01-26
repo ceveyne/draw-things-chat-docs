@@ -9,15 +9,33 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-01-26 Revision 10
+
+### Added
+
+- Tool summaries now show the model family label alongside the exact Draw Things model file that was used, so you can quickly understand what re-generates an image.
+- Added `review_image()` tool: lets you ask the agent to re-view any earlier created image, variant, or picture from tool-based generation or research.
+
+### Changed
+
+- Increased TTL for "vision-capability-priming" to 120 minutes.
+- Updated user documentation to reflect the recent changes.
+
+### Fixed
+
+- Fixed draw-things-index `index_image` markdown table: `model_display` is now preserved through picture materialization.
+
+---
+
 ## [0.1.0] - 2026-01-23 Revision 9
 
 ### Added
 
-- Added `FLUX.2 [klein] 9B (6-bit)` as new default for flux model family
+- Added `FLUX.2 [klein] 9B (6-bit)` as new default for flux model family.
 
 ### Fixed
 
-- Fixed Agent behavior to avoid generations or tool results being displayed more than just once
+- Fixed Agent behavior to avoid generations or tool results being displayed more than just once.
 
 ---
 
@@ -25,7 +43,7 @@ Notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Improved source display in draw-things-index results: Chat IDs now shown completely, project names displayed without file extension
+- Improved source display in draw-things-index results: Chat IDs now shown completely, project names displayed without file extension.
 
 ### Fixed
 
@@ -37,7 +55,7 @@ Notable changes to this project will be documented in this file.
 
 ### Fixed
 
-- Fixed a build issue that excluded necessary files from being uploaded
+- Fixed a build issue that excluded necessary files from being uploaded.
 
 ---
 
@@ -45,7 +63,7 @@ Notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Improved Project file parser for [draw-things-index](https://lmstudio.ai/ceveyne/draw-things-index/)
+- Improved Project file parser for [draw-things-index](https://lmstudio.ai/ceveyne/draw-things-index/).
 
 ---
 
@@ -57,11 +75,11 @@ Notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Changed Agent behavior to avoid generations or tool results being displayed more than just once
+- Changed Agent behavior to avoid generations or tool results being displayed more than just once.
 
 ### Fixed
 
-- Small stability and error handling improvements
+- Small stability and error handling improvements.
 
 ---
 
@@ -69,40 +87,40 @@ Notable changes to this project will be documented in this file.
 
 ### Added
 
-- Live progress indicator (gRPC only): Image generation now shows real-time progress (e.g., "Step 12/20 (60%)") in the chat UI
-- Explicit hard limit validation for width/height parameters with clear error messages
+- Live progress indicator (gRPC only): Image generation now shows real-time progress (e.g., "Step 12/20 (60%)") in the chat UI.
+- Explicit hard limit validation for width/height parameters with clear error messages.
 
 ### Changed
 
-- Width/height descriptions now include maximum allowed values
-- Dimension validation: Requests exceeding limits are now rejected with actionable error messages instead of silent clamping
+- Width/height descriptions now include maximum allowed values.
+- Dimension validation: Requests exceeding limits are now rejected with actionable error messages instead of silent clamping.
 
 ### Fixed
 
-- HTTP img2img: imageFormat shorthand no longer overrides explicitly provided width/height values (parity with gRPC)
+- HTTP img2img: imageFormat shorthand no longer overrides explicitly provided width/height values (parity with gRPC).
 
 ## [0.1.0] - 2026-01-17 Revision 3
 
 ### Changed
 
-- Adjusted number of attachments for Vision Promotion to match LM Studio client limit (5 images max)
-- Updated user documentation
+- Adjusted number of attachments for Vision Promotion to match LM Studio client limit (5 images max).
+- Updated user documentation.
 
 ### Fixed
 
-- Generation progress now shown consistently for all modes (text-to-image, image-to-image, and edit)
+- Generation progress now shown consistently for all modes (text-to-image, image-to-image, and edit).
 
 ---
 
-## [0.1.0] - 2026-01-16 - Revision 2
+## [0.1.0] - 2026-01-16 Revision 2
 
 ### Changed
 
-- Unified preview sizes across all media types for consistent display quality
+- Unified preview sizes across all media types for consistent display quality.
 
 ---
 
-## [0.1.0] - 2026-01-16 - Revision 1
+## [0.1.0] - 2026-01-16 Revision 1
 
 ### Added
 
