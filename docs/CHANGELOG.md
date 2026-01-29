@@ -9,6 +9,22 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-01-29 Revision 11
+
+### Added
+
+New screenshots to reflect the recent update to LM Studio 0.4.0.
+
+### Changed
+
+- `index_image` tool calls no longer echo the model-mapping snapshot JSON back into the agent-model prompt history (token economy), while still passing the snapshot through to the index tool itself.
+
+### Fixed
+
+- README: Updated the model table to show flux_2_klein_9b_q6p.ckpt for all three modes (instead of just text2image with flux_1). Removed the "—" (not supported) markers for Flux.
+
+---
+
 ## [0.1.0] - 2026-01-26 Revision 10
 
 ### Added
