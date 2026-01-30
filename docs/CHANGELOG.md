@@ -9,6 +9,15 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-01-30 Revision 12
+
+### Changed
+
+- `image2image` mode now supports moodboard (multiple reference images) via gRPC transport, same as `edit` mode.
+- `current conversation tokens` now refers to the agent model's context length
+
+---
+
 ## [0.1.0] - 2026-01-29 Revision 11
 
 ### Added

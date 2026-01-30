@@ -118,7 +118,7 @@ The models **actually** used in the basic settings are:
 | Mode / Model  | auto                                         | z-image                      | qwen-image                      | flux                       | custom                        |
 | ------------- | -------------------------------------------- | ---------------------------- | ------------------------------- | -------------------------- | ----------------------------- |
 | `text2image`  | z-image (`z_image_turbo_1.0_q8p.ckpt`)       | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_2512_bf16_q8p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | — (via `custom_configs.json`) |
-| `image2image` | z-image (`z_image_turbo_1.0_q8p.ckpt`)       | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_2512_bf16_q8p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | — (via `custom_configs.json`) |
+| `image2image` | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_edit_2511_q6p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | — (via `custom_configs.json`) |
 | `edit`        | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | —                            | `qwen_image_edit_2511_q6p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | — (via `custom_configs.json`) |
 
 The basic idea is: If _no_ model is explicitly selected, a proven, fast model is used. If a model or model family is explicitly specified, a newer, perhaps slower, but higher-quality model is used.
