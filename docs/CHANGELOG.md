@@ -9,6 +9,15 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-02-01 Revision 13
+
+### Changed
+
+- Optimized model-mapping-snappshot for [draw_things_index](https://lmstudio.ai/ceveyne/draw-things-index/)
+- Updated user documentation
+
+---
+
 ## [0.1.0] - 2026-01-30 Revision 12
 
 ### Changed
