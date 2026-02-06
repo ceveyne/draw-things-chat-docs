@@ -9,6 +9,16 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-02-06 Revision 14
+
+### Changed
+
+- Slightly increased `steps` in `edit` mode for better prompt adherence with qwen-image.
+- Minimal adjustments to generation defaults.
+- Improved Brave Web Search result rendering
+
+---
+
 ## [0.1.0] - 2026-02-01 Revision 13
 
 ### Changed
@@ -31,7 +41,7 @@ Notable changes to this project will be documented in this file.
 
 ### Added
 
-New screenshots to reflect the recent update to LM Studio 0.4.0.
+- New screenshots to reflect the recent update to LM Studio 0.4.0.
 
 ### Changed
 
