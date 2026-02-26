@@ -66,7 +66,7 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 4. Prepare your **LM Studio Server**:
 
-- Download your preferred vision-capable agent-model (default: `qwen/qwen3-vl-30b`) to your **server** computer
+- Download your preferred vision-capable agent-model (default: `qwen/qwen3.5-35b-a3b`) to your **server** computer
 - Set appropriate context length for your vision-capable agent-model
 - Enable your **LM Studio Server**
 
@@ -101,7 +101,7 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 2. Prepare your **LM Studio Server**:
 
-- Download your preferred vision-capable agent-model (default: `qwen/qwen3-vl-30b`) to your **server** computer
+- Download your preferred vision-capable agent-model (default: `qwen/qwen3.5-35b-a3b`) to your **server** computer
 - Set appropriate context length for your vision-capable agent-model
 - Enable your **LM Studio Server**
 
@@ -145,7 +145,7 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 4. Prepare your **LM Studio Server**:
 
-- Download your preferred vision-capable agent-model (default: `qwen/qwen3-vl-30b`) to your **server** computer
+- Download your preferred vision-capable agent-model (default: `qwen/qwen3.5-35b-a3b`) to your **server** computer
 - Set appropriate context length for your vision-capable agent-model
 - Enable your **LM Studio Server**
 

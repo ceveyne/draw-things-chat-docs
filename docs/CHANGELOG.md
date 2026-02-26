@@ -9,13 +9,21 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-02-26 Revision 15
+
+### Changed
+
+- Added support for Qwen3.5 35B (qwen/qwen3-vl-30b) as the new default LLM.
+
+---
+
 ## [0.1.0] - 2026-02-06 Revision 14
 
 ### Changed
 
 - Slightly increased `steps` in `edit` mode for better prompt adherence with qwen-image.
 - Minimal adjustments to generation defaults.
-- Improved Brave Web Search result rendering
+- Improved Brave Web Search result rendering.
 
 ---
 
