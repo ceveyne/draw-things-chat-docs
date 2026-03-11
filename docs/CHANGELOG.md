@@ -9,6 +9,19 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-03-11 Revision 16
+
+### Fixed
+
+- Fixed TCD Trailing sampler support.
+
+### Changed
+
+- Qwen3.5 now uses the correct thinking-mode flag.
+- Progress messages during generation are more informative.
+
+---
+
 ## [0.1.0] - 2026-02-26 Revision 15
 
 ### Changed
