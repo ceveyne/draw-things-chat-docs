@@ -11,3 +11,6 @@
 !docs/**
 !docs/images/
 !docs/images/**
+
+# GitHub config
+.github/
