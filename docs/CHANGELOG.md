@@ -9,17 +9,36 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-13 Revision 17
+## [0.1.0] - 2026-03-14 Revision 21
 
-### Changed
+### Added
 
 - Added support for LTX-2 video generation.
 - Added LTX-2 q6p model variants (`ltx_2_19b_distilled_q6p.ckpt`, `ltx_2_19b_dev_q6p.ckpt`) as new defaults.
 
+---
+
+## [0.1.0] - 2026-03-13 Revision 20
+
+### Fixed
+
+- Fixed `imageFormat` override not being resolved to explicit width/height before canvas normalization in `image2image`, `edit`, and `image2video` modes.
+
+---
+
+## [0.1.0] - 2026-03-13 Revision 19
+
 ### Fixed
 
 - Fixed `normalizeInputBuffer` distortion bug: input images were improperly scaled, causing stretched/distorted results when the requested format differed from the source (e.g. portrait canvas → landscape output).
-- Fixed `imageFormat` override not being resolved to explicit width/height before canvas normalization in `image2image`, `edit`, and `image2video` modes.
+
+---
+
+## [0.1.0] - 2026-03-13 Revision 17, 18
+
+### Changed
+
+- Changed pre-build process for LM Studio Hub.
 
 ---
 
@@ -58,7 +77,7 @@ Notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Optimized model-mapping-snappshot for [draw_things_index](https://lmstudio.ai/ceveyne/draw-things-index/)
+- Optimized model-mapping-snapshot for [draw_things_index](https://lmstudio.ai/ceveyne/draw-things-index/)
 - Updated user documentation
 
 ---
@@ -177,6 +196,8 @@ Notable changes to this project will be documented in this file.
 ### Fixed
 
 - HTTP img2img: imageFormat shorthand no longer overrides explicitly provided width/height values (parity with gRPC).
+
+---
 
 ## [0.1.0] - 2026-01-17 Revision 3
 
