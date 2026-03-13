@@ -28,7 +28,7 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 **LM Studio Plugin: Draw Things supported by vision-capable Agents**
 
 - Image-based "Reasoning" approach for vision-capable LLMs
-- "Agentic" workflows for text2image, image2image & edit
+- "Agentic" workflows for text2image, image2image, edit, text2video & image2video
 - Re-use of any previously generates content (requires ["Metadata Query" plugin **draw-things-index**](https://github.com/ceveyne/draw-things-index-docs))
 - All local
 - Optional: distributed computing across your local network
@@ -42,9 +42,9 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 ### Draw Things user on Mac
 
-1. Prepare for `text2image`, `image2image` and `edit` modes by simply providing your favourite **Draw-Things**-settings for use with **draw-things-chat**:
+1. Prepare for `text2image`, `image2image`, `edit`, `text2video` and `image2video` modes by simply providing your favourite **Draw-Things**-settings for use with **draw-things-chat**:
 
-- **Draw-Things** > Basic Settings > Load your preferences > Save as... `text2image.auto`, `image2image.auto`, `edit.auto`
+- **Draw-Things** > Basic Settings > Load your preferences > Save as... `text2image.auto`, `image2image.auto`, `edit.auto`, `text2video.auto`, `image2video.auto`
 
 ![custom_configs_auto_draw_things(1)](<docs/images/custom_configs_auto_draw_things(1).jpeg>)
 
@@ -127,9 +127,9 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 - For model-management and custom_configs it's easiest to use the Draw Things Client on macOS.
 
-2. Prepare for `text2image`, `image2image` and `edit` modes by simply providing your favourite **Draw-Things**-settings for use with **draw-things-chat**:
+2. Prepare for `text2image`, `image2image`, `edit`, `text2video` and `image2video` modes by simply providing your favourite **Draw-Things**-settings for use with **draw-things-chat**:
 
-- **Draw-Things** > Basic Settings > Load your preferences > Save as... `text2image.auto`, `image2image.auto`, `edit.auto`
+- **Draw-Things** > Basic Settings > Load your preferences > Save as... `text2image.auto`, `image2image.auto`, `edit.auto`, `text2video.auto`, `image2video.auto`
 
 ![custom_configs_auto_draw_things(1)](<docs/images/custom_configs_auto_draw_things(1).jpeg>)
 

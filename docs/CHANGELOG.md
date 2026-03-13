@@ -9,6 +9,20 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-03-13 Revision 17
+
+### Changed
+
+- Added support for LTX-2 video generation.
+- Added LTX-2 q6p model variants (`ltx_2_19b_distilled_q6p.ckpt`, `ltx_2_19b_dev_q6p.ckpt`) as new defaults.
+
+### Fixed
+
+- Fixed `normalizeInputBuffer` distortion bug: input images were improperly scaled, causing stretched/distorted results when the requested format differed from the source (e.g. portrait canvas → landscape output).
+- Fixed `imageFormat` override not being resolved to explicit width/height before canvas normalization in `image2image`, `edit`, and `image2video` modes.
+
+---
+
 ## [0.1.0] - 2026-03-11 Revision 16
 
 ### Fixed

@@ -33,7 +33,7 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 **LM Studio Plugin: Draw Things supported by vision-capable Agents**
 
 - Image-based "Reasoning" approach for vision-capable LLMs
-- "Agentic" text2image, image2image & edit
+- "Agentic" text2image, image2image, edit, text2video & image2video
 - All local
 - Optional: distributed computing across your local network
 - Maintain your favourite settings, models, LoRAs, etc., as custom presets to ensure the desired qualities of your Draw Things artwork.
@@ -44,11 +44,19 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 Let me have a quick think... I'm sure there were some...
 
-![draw-things-chat(1)](<images/draw-things-chat(1).jpeg>)
+![video_generation_flow(1)](<images/video_generation_flow(1).jpeg>)
 
-![draw-things-chat(2)](<images/draw-things-chat(2).jpeg>)
+![video_generation_flow(4)](<images/video_generation_flow(4).jpeg>)
 
-![draw-things-chat(3)](<images/draw-things-chat(3).jpeg>)
+![video_generation_flow(5)](<images/video_generation_flow(5).jpeg>)
+
+![video_generation_flow(6)](<images/video_generation_flow(6).jpeg>)
+
+![video_generation_flow(7)](<images/video_generation_flow(7).jpeg>)
+
+![video_generation_flow(8)](<images/video_generation_flow(8).jpeg>)
+
+![video_generation_flow(9)](<images/video_generation_flow(9).jpeg>)
 
 _In the long run_, this plugin is suited to assist beginners with complex edits, improve prompts, introduce ideas you might not have come up with yourself, or implement [sophisticated prompting guidelines](https://docs.bfl.ml/guides/prompting_guide_flux). Or better yet: to create or optimise prompting guides based on visual results. Use cases like these might actually justify the effort for Vision Promotion.
 
@@ -94,7 +102,7 @@ If you are bored but also lacking your own image ideas, you can try the **Firepl
 
 ## What You Can Expect
 
-In terms of maturity, this plugin is somewhere around early-beta. A study, a demo, a prototype, a first draft. Hopefully good enough to test the concept. What you can investigate with it is whether an Agent with "Vision Promotion" offers a similar added value as an LLM with "Thinking" does for text generation.
+In terms of maturity, this plugin is somewhere around early-beta. A study, a demo, a prototype, a draft. Hopefully good enough to test the concept. What you can investigate with it is whether an Agent with "Vision Promotion" offers a similar added value as an LLM with "Thinking" does for text generation.
 
 <a id="disclaimer"></a>
 
@@ -110,15 +118,17 @@ Rendering some images with text2image is possible, of course, but you could do t
 
 It gets interesting when you perform iterative edits.
 
-Currently, the tool supports `text2image`, `image2image`, and `edit`.
-The supported model families are: z-image, qwen-image, flux, and custom.
+Currently, the tool supports `text2image`, `image2image`, `edit`, `text2video`, and `image2video`.
+The supported model families are: z-image, qwen-image, flux, ltx, and custom.
 The models **actually** used in the basic settings are:
 
-| Mode / Model  | auto                                         | z-image                      | qwen-image                      | flux                       | custom                        |
-| ------------- | -------------------------------------------- | ---------------------------- | ------------------------------- | -------------------------- | ----------------------------- |
-| `text2image`  | z-image (`z_image_turbo_1.0_q8p.ckpt`)       | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_2512_bf16_q8p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | — (via `custom_configs.json`) |
-| `image2image` | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_edit_2511_q6p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | — (via `custom_configs.json`) |
-| `edit`        | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | —                            | `qwen_image_edit_2511_q6p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | — (via `custom_configs.json`) |
+| Mode / Model  | auto                                         | z-image                      | qwen-image                      | flux                       | ltx                            | custom                        |
+| ------------- | -------------------------------------------- | ---------------------------- | ------------------------------- | -------------------------- | ------------------------------ | ----------------------------- |
+| `text2image`  | z-image (`z_image_turbo_1.0_q8p.ckpt`)       | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_2512_bf16_q8p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | `ltx_2_19b_distilled_q6p.ckpt` | — (via `custom_configs.json`) |
+| `image2image` | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | `z_image_turbo_1.0_q8p.ckpt` | `qwen_image_edit_2511_q6p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | `ltx_2_19b_distilled_q6p.ckpt` | — (via `custom_configs.json`) |
+| `edit`        | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | —                            | `qwen_image_edit_2511_q6p.ckpt` | `flux_2_klein_9b_q6p.ckpt` | —                              | — (via `custom_configs.json`) |
+| `text2video`  | ltx (`ltx_2_19b_distilled_q6p.ckpt`)         | —                            | —                               | —                          | `ltx_2_19b_distilled_q6p.ckpt` | — (via `custom_configs.json`) |
+| `image2video` | ltx (`ltx_2_19b_distilled_q6p.ckpt`)         | —                            | —                               | —                          | `ltx_2_19b_distilled_q8p.ckpt` | — (via `custom_configs.json`) |
 
 The basic idea is: If _no_ model is explicitly selected, a proven, fast model is used. If a model or model family is explicitly specified, a newer, perhaps slower, but higher-quality model is used.
 
@@ -179,6 +189,7 @@ The setup requires a certain amount of patience and concentration, and to be abl
 ✅ "name": "Qwen Image Edit 2509 (6-bit)", "file": "qwen_image_edit_2509_q6p.ckpt"  
 ✅ "name": "Qwen Image Edit 2511 (6-bit)", "file": "qwen_image_edit_2511_q6p.ckpt"  
 ✅ "name": "FLUX.2 [klein] 9B (6-bit)", "file": "flux_2_klein_9b_q6p.ckpt"
+✅ "name": "LTX-2 19B [distilled] (6-bit)", "file": "ltx_2_19b_distilled_q6p.ckpt"
 
 ### Additionally, you need the following LoRAs:
 
@@ -236,132 +247,11 @@ With just a few clicks, you download the LM Studio Plugin: `ceveyne/draw-things-
 
 **Suggestion for a System Prompt:**
 
-```
-You are the Creative Director in a design agency. Your job is to translate client requirements into visual proofs using the `generate_image` tool.
+Unlike its predecessor models, Qwen3.5 delivers pleasingly good results for image workflows – even with complex edits.
 
-<core_principles>
-1) Show, don’t debate: Generate at least one visual draft before asking for preferences or opinions.
-2) Visual specificity: Talk in visible facts (objects, layout, camera, lighting, materials, typography), not intentions or expected “effects”.
-3) Controlled iteration: Each new draft changes only 1–3 explicitly named visual variables.
-</core_principles>
+Although the model card states that the model can also process video, the generation of animations appears to be less well trained. It seems as if the "world knowledge" for realistically estimating the duration of a scene is largely absent. Such deficits can hardly be compensated for by general instructions. For now, it might make more sense to brief the task in more detail.
 
-<hard_controls>
-- MAX ONE `generate_image` call per assistant message.
-- MAX THREE total drafts per user request unless the user explicitly asks for more.
-- If info is missing before draft 1: assume it; list assumptions as up to 3 checkboxes after the image.
-- If the user says "STOP": no tool calls; summarize directions and offer next options only.
-</hard_controls>
-
-<communication_style>
-- Senior Creative Director tone: direct, concrete, minimal fluff.
-- No meta-reporting (no "step", no "checklist", no internal labels).
-- High variance: avoid repeating stock phrases; vary sentence openings.
-
-<variance_rules>
-BANNED PHRASES (never say): "creative bet".
-Avoid repeating the same sentence opener across turns.
-Prefer concrete openers like: "Building… / Composing… / Shaping… / Tightening… / Switching… / Testing… / Dialing…"
-</variance_rules>
-</communication_style>
-
-<reference_policy>
-- If user uploads exist: treat them as anchors for the first draft.
-- External references (user uploads) have priority over internal generated variants.
-- Only build on an internal generated image if it is clearly on track (>80% aligned); otherwise reset cleanly.
-</reference_policy>
-
-<tool_selection>
-- edit: preferred choice for multiple references OR strict subject preservation while changing environment/content.
-- image2image: single reference; global refinements (lighting, style, atmosphere) while keeping composition broadly similar.
-- text2image: start from scratch, no references.
-</tool_selection>
-
-<no_imperatives_no_intent_language>
-CRITICAL: The image model is not an "agent" to instruct. Avoid operator-style goals and intent language that can get rendered as text.
-
-- Avoid intent/goal phrasing: "to make", "so that", "aiming for", "ensure", "legible", "clarity", "more detail".
-- Do not include quoted sentences unless the user explicitly wants text inside the image.
-- Default negative constraint (unless user requests text): no random words, no watermarks, no extraneous lettering, no captions.
-
-Allowed language depends on mode:
-- text2image / image2image: descriptive phrases are preferred (nouns/adjectives + camera/light/material/layout).
-- edit: ultra-short change tokens are preferred (telegraphic commands). No full sentences.
-</no_imperatives_no_intent_language>
-
-<prompting_rules_by_mode>
-A) text2image (Canvas)
-- Write a detailed, concrete scene description.
-- Use nouns/adjectives + camera + lighting + materials + layout.
-- No intention language.
-
-B) image2image (Brush)
-- Medium-length refinement description.
-- Refer to global changes as descriptors, not goals.
-  Prefer: "crisper edges, higher micro-contrast, no motion blur" over "sharpen to enhance clarity".
-
-C) edit (Scalpel)
-- Extremely short, telegraphic change list (comma-separated tokens).
-- Each token must be a visible change, written as a fragment, not a sentence.
-- No rationale, no “focus on”, no “make it”.
-- Examples (GOOD):
-  "manga style"
-  "low-angle shot"
-  "subject sitting on the floor"
-  "night lighting, neon signs"
-  "remove background people"
-  "add soft rim light"
-  "increase negative space top"
-  "headline area blank (no text)"
-- Examples (BAD):
-  "Sharpen the image to enhance clarity and make text legible."
-  "Please improve the composition and make it more premium."
-</prompting_rules_by_mode>
-
-<prompt_format_text2image>
-Use this order:
-
-1) SUBJECT: who/what, exact count, key attributes
-2) ENVIRONMENT: setting, background elements
-3) COMPOSITION: framing, angle, distance, layout, negative space
-4) LIGHTING: key light direction/softness, time-of-day, contrast
-5) MATERIALS / TEXTURES: surfaces, finishes, grain
-6) COLOR: palette in plain terms
-7) TYPOGRAPHY (only if requested): placement + size + hierarchy + font class + contrast, written as layout facts
-   Example: "large centered headline area, black sans-serif on solid white, generous margins, straight baseline"
-8) OUTPUT: aspect ratio, quality cues (high resolution, clean edges, no motion blur)
-
-Replace vague vibe words with visible cues:
-"premium" -> "clean studio lighting, smooth gradients, minimal props, crisp edges"
-"dynamic" -> "wide-angle, diagonal composition, motion blur OR frozen high-shutter action"
-</prompt_format_text2image>
-
-<prompt_format_image2image>
-- Start with what must remain: subject, composition, key elements.
-- Then list 1–3 global descriptors to change: lighting, palette, texture, lens look.
-- Keep it concrete; avoid goals.
-</prompt_format_image2image>
-
-<prompt_format_edit>
-Write only: a short list of change tokens (1–8 tokens), separated by commas.
-- Each token: 2–6 words max.
-- Prefer nouns/adjectives; minimal verbs allowed only if unambiguous ("remove", "add", "replace").
-- Never include full sentences.
-</prompt_format_edit>
-
-<execution_protocol>
-Before the tool call:
-- Write ONE sentence describing the draft’s visible setup (not an instruction), naming 1–3 visual variables you’re testing.
-
-Then generate immediately.
-
-After generation:
-- 2 bullets: what is clearly visible and working / what is visibly wrong or missing
-- A/B/C next directions: 2–3 concrete options (each option = one sentence, each changes 1–3 visual variables)
-- Optional: up to 3 assumption checkboxes (only if needed)
-</execution_protocol>
-```
-
-😳 Depending on the LLM, such a system prompt can have significant to fatal effects. It is well worth experimenting with the wording. To understand how models behave "natively", "No Prompt" is also a valid option.
+😳 Depending on the LLM, a system prompt can have significant to fatal effects. It is well worth experimenting with the wording. To understand how models behave "natively", "No Prompt" is also a valid option.
 
 <a id="special-features"></a>
 
@@ -378,11 +268,13 @@ Those of you who have lovingly maintained your own **Draw Things** configuration
 
 For the settings to take effect, you must use the following naming scheme:
 
-| Mode / Model  | auto               | z-image               | qwen-image               | flux               | custom               |
-| ------------- | ------------------ | --------------------- | ------------------------ | ------------------ | -------------------- |
-| `text2image`  | `text2image.auto`  | `text2image.z-image`  | `text2image.qwen-image`  | `text2image.flux`  | `text2image.custom`  |
-| `image2image` | `image2image.auto` | `image2image.z-image` | `image2image.qwen-image` | `image2image.flux` | `image2image.custom` |
-| `edit`        | `edit.auto`        | `edit.z-image`        | `edit.qwen-image`        | `edit.flux`        | `edit.custom`        |
+| Mode / Model  | auto               | z-image               | qwen-image               | flux               | ltx               | custom               |
+| ------------- | ------------------ | --------------------- | ------------------------ | ------------------ | ----------------- | -------------------- |
+| `text2image`  | `text2image.auto`  | `text2image.z-image`  | `text2image.qwen-image`  | `text2image.flux`  | `text2image.ltx`  | `text2image.custom`  |
+| `image2image` | `image2image.auto` | `image2image.z-image` | `image2image.qwen-image` | `image2image.flux` | `image2image.ltx` | `image2image.custom` |
+| `edit`        | `edit.auto`        | —                     | `edit.qwen-image`        | `edit.flux`        | —                 | `edit.custom`        |
+| `text2video`  | `text2video.auto`  | —                     | —                        | —                  | `text2video.ltx`  | `text2video.custom`  |
+| `image2video` | `image2video.auto` | —                     | —                        | —                  | `image2video.ltx` | `image2video.custom` |
 
 ![custom_configs_draw_things(1)](<images/custom_configs_draw_things(1).jpeg>)
 
@@ -451,7 +343,7 @@ Here lies the _actual_ solution: https://github.com/lmstudio-ai/lmstudio-js/issu
 Building a RAG knowledge base:
 
 - Creating a collection of Markdown documents with best practices for prompt engineering.
-- Providing explanations of the modes (`text2image`, `image2image`, `edit`) and guides for current diffusion models.
+- Providing explanations of the modes (`text2image`, `image2image`, `edit`, `text2video`, `image2video`) and guides for current diffusion models.
 
 ![where_do_we_go_now(1)](<images/where_do_we_go_now(1).jpeg>)
 
