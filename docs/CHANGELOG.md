@@ -9,6 +9,18 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-03-15 Revision 22
+
+### Added
+
+- Added LTX-2.3 (22B) to the LTX model family (`ltx-2.3-distilled`, `ltx-2.3-dev`).
+
+### Changed
+
+- Improved gRPC-connection logging.
+
+---
+
 ## [0.1.0] - 2026-03-14 Revision 21
 
 ### Added
