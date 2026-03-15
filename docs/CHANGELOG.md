@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-03-15 Revision 24
+
+### Changed
+
+- Improved plugin runtime stability.
+
+---
+
 ## [0.1.0] - 2026-03-15 Revision 23
 
 ### Changed
