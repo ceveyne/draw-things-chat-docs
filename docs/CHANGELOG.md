@@ -13,7 +13,7 @@ Notable changes to this project will be documented in this file.
 
 ### Added
 
-- Added LTX-2.3 (22B) to the LTX model family (`ltx-2.3-distilled`, `ltx-2.3-dev`).
+- Added support for LTX-2.3 (22B) to the LTX model family (`ltx-2.3-distilled`, `ltx-2.3-dev`).
 
 ### Changed
 
