@@ -9,6 +9,18 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.0] - 2026-03-17 Revision 26
+
+## Added
+
+- Added support for FLUX.2 [klein] 9B KV to the Flux model family (`flux-2-klein`).
+
+### Changed
+
+- Raised `numFrames` maximum from 257 to 641 (25,6 s).
+
+---
+
 ## [0.1.0] - 2026-03-15 Revision 25
 
 ### Fixed
