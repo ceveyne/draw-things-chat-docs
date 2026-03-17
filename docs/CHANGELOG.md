@@ -17,6 +17,7 @@ Notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Normalize default models to 6-bit versions.
 - Raised `numFrames` maximum from 257 to 641 (25,6 s).
 
 ---
