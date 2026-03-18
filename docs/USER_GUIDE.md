@@ -152,7 +152,7 @@ But at the same time, this can be an indication that the Agent model used isn't 
 
 ## Vision Promotion
 
-To assist you adequately, the Agent model "sees" what it gets as input and what it generates (up to 2 attachments and a maximum of 3 generated images). I call this concept "Vision Promotion". "Vision Promotion" serves as visual feedback for iteration, a means of better "understanding", and to make the whole thing feel "natural".
+To assist you adequately, the Agent model "sees" what it gets as input and what it generates (up to 2 attachments and a maximum of 4 generated images). I call this concept "Vision Promotion". "Vision Promotion" serves as visual feedback for iteration, a means of better "understanding", and to make the whole thing feel "natural".
 
 If you have a lot of time, this tool is an opportunity for sheer ENDLESS troubleshooting. Current models may be immature regarding prompt optimisation and tool use, but they have a **strong** tendency to fib – and they are good at it. Whether they actually _look_ at a generated image or just waffle on about what they _expect_ based on the prompt is not always easy to determine. Especially not when the prompt is detailed by the book and the models use their world knowledge to trick you.
 
