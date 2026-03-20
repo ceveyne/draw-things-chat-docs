@@ -9,15 +9,16 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-18 Revision 27
+## [0.1.0] - 2026-03-20 Revision 27
 
 ## Added
 
-- Added an option to auto-unload idleling agent-model on komplex `image2image`, `edit`, `text2video` or `video2video` tool-calls.
+- Added an option to auto-unload idleling agent-model on komplex `text2video` or `video2video` tool-calls.
 
 ### Changed
 
 - Raised maximum `variants` from 3 to 4 (`text2image`, `image2image`, `edit`). Vision Promotion window expanded accordingly.
+- Video encoding (`.mov` assembly) is restricted to `text2video` and `image2video` modes.
 
 ---
 
