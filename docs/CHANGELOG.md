@@ -9,7 +9,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-20 Revision 27
+## [0.1.27] - 2026-03-21 Revision 27
 
 ## Added
 
@@ -22,7 +22,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-17 Revision 26
+## [0.1.26] - 2026-03-17 Revision 26
 
 ## Added
 
@@ -35,7 +35,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-15 Revision 25
+## [0.1.25] - 2026-03-15 Revision 25
 
 ### Fixed
 
@@ -43,7 +43,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-15 Revision 24
+## [0.1.24] - 2026-03-15 Revision 24
 
 ### Changed
 
@@ -51,7 +51,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-15 Revision 23
+## [0.1.23] - 2026-03-15 Revision 23
 
 ### Changed
 
@@ -59,7 +59,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-15 Revision 22
+## [0.1.22] - 2026-03-15 Revision 22
 
 ### Added
 
@@ -71,7 +71,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-14 Revision 21
+## [0.1.21] - 2026-03-14 Revision 21
 
 ### Added
 
@@ -80,7 +80,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-13 Revision 20
+## [0.1.20] - 2026-03-13 Revision 20
 
 ### Fixed
 
@@ -88,7 +88,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-13 Revision 19
+## [0.1.19] - 2026-03-13 Revision 19
 
 ### Fixed
 
@@ -96,7 +96,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-13 Revision 17, 18
+## [0.1.18] - 2026-03-13 Revision 17, 18
 
 ### Changed
 
@@ -104,7 +104,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-03-11 Revision 16
+## [0.1.16] - 2026-03-11 Revision 16
 
 ### Fixed
 
@@ -117,7 +117,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-02-26 Revision 15
+## [0.1.15] - 2026-02-26 Revision 15
 
 ### Changed
 
@@ -125,7 +125,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-02-06 Revision 14
+## [0.1.14] - 2026-02-06 Revision 14
 
 ### Changed
 
@@ -135,7 +135,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-02-01 Revision 13
+## [0.1.13] - 2026-02-01 Revision 13
 
 ### Changed
 
@@ -144,7 +144,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-30 Revision 12
+## [0.1.12] - 2026-01-30 Revision 12
 
 ### Changed
 
@@ -153,7 +153,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-29 Revision 11
+## [0.1.11] - 2026-01-29 Revision 11
 
 ### Added
 
@@ -169,7 +169,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-26 Revision 10
+## [0.1.10] - 2026-01-26 Revision 10
 
 ### Added
 
@@ -187,7 +187,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-23 Revision 9
+## [0.1.9] - 2026-01-23 Revision 9
 
 ### Added
 
@@ -199,7 +199,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-22 Revision 8
+## [0.1.8] - 2026-01-22 Revision 8
 
 ### Changed
 
@@ -211,7 +211,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-22 Revision 7
+## [0.1.7] - 2026-01-22 Revision 7
 
 ### Fixed
 
@@ -219,7 +219,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-22 Revision 6
+## [0.1.6] - 2026-01-22 Revision 6
 
 ### Changed
 
@@ -227,7 +227,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-21 Revision 5
+## [0.1.5] - 2026-01-21 Revision 5
 
 ### Added
 
@@ -243,7 +243,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-18 Revision 4
+## [0.1.4] - 2026-01-18 Revision 4
 
 ### Added
 
@@ -261,7 +261,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-17 Revision 3
+## [0.1.3] - 2026-01-17 Revision 3
 
 ### Changed
 
@@ -274,7 +274,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-16 Revision 2
+## [0.1.2] - 2026-01-16 Revision 2
 
 ### Changed
 
@@ -282,7 +282,7 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.0] - 2026-01-16 Revision 1
+## [0.1.1] - 2026-01-16 Revision 1
 
 ### Added
 
