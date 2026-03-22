@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.28] - 2026-03-22 Revision 28
+
+### Fixed
+
+- Custom Config video presets (`image2video.custom`, `text2video.custom`) now correctly resolve the active model.
+
+---
+
 ## [0.1.27] - 2026-03-21 Revision 27
 
 ## Added
