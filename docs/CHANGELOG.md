@@ -13,8 +13,8 @@ Notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Progress display during image generation now uses `totalSteps + 1` as denominator — prevents premature "100%" before generation completes.
-- Context-window warning threshold lowered from 32,768 to 16,384 tokens (recommendation of ≥ 32,768 unchanged).
+- Adjustments to progress display during image generation.
+- Context-window warning threshold lowered from 32,768 to 16,384 tokens.
 
 ---
 
