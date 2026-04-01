@@ -9,12 +9,18 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.29] - 2026-03-23 Revision 29
+## [0.1.29] - 2026-04-01 Revision 29
+
+### Added
+
+- Added Qwen3.5 9B capabilities.
 
 ### Changed
 
 - Adjustments to progress display during image generation.
 - Context-window warning threshold lowered from 32,768 to 16,384 tokens.
+- Match Swift Int() truncation semantics — use Math.floor instead of Math.round when converting float tensors to uint8 pixels.
+- `nextVariantV` counter is preserved when all image turns are deleted, so variant identifiers are never reused across generations.
 
 ---
 
@@ -28,7 +34,7 @@ Notable changes to this project will be documented in this file.
 
 ## [0.1.27] - 2026-03-21 Revision 27
 
-## Added
+### Added
 
 - Added an option to auto-unload idleling agent-model on komplex `text2video` or `video2video` tool-calls.
 
@@ -41,7 +47,7 @@ Notable changes to this project will be documented in this file.
 
 ## [0.1.26] - 2026-03-17 Revision 26
 
-## Added
+### Added
 
 - Added support for FLUX.2 [klein] 9B KV to the Flux model family (`flux-2-klein`).
 
