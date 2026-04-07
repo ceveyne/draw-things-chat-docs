@@ -9,6 +9,25 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.30] - 2026-04-04 Revision 30
+
+### Added
+
+- Added Google Gemma 4 26B capabilities.
+- Added an option to embed generation metadata in generated images.
+- Added Post-Thinking Intercept: tool calls inside a reasoning/thinking block are now detected and executed correctly after the block closes.
+
+### Changed
+
+- Bumped `flatbuffers` dependency from `24.12.23` to `25.9.23`.
+
+### Fixed
+
+- Fixed race condition, which could cause attachments not to be imported correctly.
+- Fixed Re-Generate recovery: when the user regenerates an AI response after attaching an image, the agent now correctly re-sees the attachment instead of silently omitting it.
+
+---
+
 ## [0.1.29] - 2026-04-01 Revision 29
 
 ### Added
