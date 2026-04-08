@@ -253,6 +253,20 @@ Although the model card states that the model can also process video, the genera
 
 😳 Depending on the LLM, a system prompt can have significant to fatal effects. It is well worth experimenting with the wording. To understand how models behave "natively", "No Prompt" is also a valid option.
 
+**Best practices for providing instructions:**
+
+After experimenting with several system prompts for a while, I eventually moved toward collecting the various guidelines in a RAG system. Both solutions have specific advantages and disadvantages:
+
+- System prompts are passed at the start of a conversation. As the conversation progresses, they are sometimes forgotten — especially when the instructions describe very specific use cases.
+- Embeddings are delivered context-sensitively in the respective turn. Although the content is tailor-made — provided all parameters of the RAG pipeline are well calibrated — the mode of delivery has two critical disadvantages: 1. The push principle does not create the best reception conditions, only the second-best. (Even if "spoon-feeding" seems convenient, it is not always accepted by the recipient.) 2. The communication is one-sided: the agent itself has no opportunity to document and record what it has learned.
+
+The best experience I've had so far has been with the tool: [playbook](https://lmstudio.ai/ceveyne/playbook). It combines all the advantages and avoids all the disadvantages mentioned:
+
+- The pull principle ensures optimal reception conditions: the agent receives the information it needs exactly when it actively asks for it.
+- Beyond the ability to maintain the knowledge base editorially and curate its contents professionally, agents can add their own notes and update outdated information.
+- The sometimes very specific information contained in the system does not bleed into "other" topics and content of conversations. The tool can remain "always on" without increasing the token load (aside from the tool descriptions).
+- Even better might be fine-tuning the agent models — which is, however, comparatively complex and harder to keep up to date.
+
 <a id="special-features"></a>
 
 ## Special Features
@@ -340,7 +354,7 @@ Here lies the _actual_ solution: https://github.com/lmstudio-ai/lmstudio-js/issu
 
 ## What's next?
 
-Building a RAG knowledge base:
+Completing the RAG knowledge base for the [playbook](https://lmstudio.ai/ceveyne/playbook):
 
 - Creating a collection of Markdown documents with best practices for prompt engineering.
 - Providing explanations of the modes (`text2image`, `image2image`, `edit`, `text2video`, `image2video`) and guides for current diffusion models.

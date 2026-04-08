@@ -9,7 +9,16 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.30] - 2026-04-04 Revision 30
+## [0.1.30] - 2026-04-08 Revision 31
+
+### Added
+
+- Added additional guardrails for multiple tool-calls within an ongoing thinking process.
+- Updated the [USER_GUIDE.md](USER_GUIDE.md#setup) with best practices for providing instructions based on my new tool: [playbook](https://lmstudio.ai/ceveyne/playbook).
+
+---
+
+## [0.1.30] - 2026-04-07 Revision 30
 
 ### Added
 
