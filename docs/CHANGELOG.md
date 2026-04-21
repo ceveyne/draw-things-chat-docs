@@ -11,6 +11,11 @@ Notable changes to this project will be documented in this file.
 
 ## [0.1.33] - 2026-04-21 Revision 33
 
+### Added
+
+- Added 8-bit S (`i8x`) model filenames for Z Image Turbo 1.0, Z Image Base 1.0, Qwen Image 2512, Qwen Image Edit 2511, FLUX.2 [klein] 4B, and LTX-2.3 (distilled, dev).
+- Added `z-image-1.0` capability entry for Z Image Base 1.0 (`q8p`, `q6p`, `i8x`).
+
 ### Changed
 
 - Custom Configs now accept arbitrary postfixes (`text2image.<any>`, `image2image.<any>`, `edit.<any>`, `text2video.<any>`, `image2video.<any>`). Previously only the built-in model IDs (`auto`, `z-image`, `qwen-image`, `flux`, `ltx`, `custom`) were accepted as postfixes.
