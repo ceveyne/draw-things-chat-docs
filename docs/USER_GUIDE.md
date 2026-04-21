@@ -214,7 +214,7 @@ Default is `Port` **7859**; `Transport Layer Security`, `Response Compression`, 
 For the LLMs, you need a minimum of 2 models: 1 x the _actual_ language model you communicate with, and additionally a small helper model that holds the door open for you when attaching images. It is loaded automatically and then appears as `vision-capability-priming` in the list.
 
 ✅ "display_name": "Qwen3 VL 4B", "key": "qwen/qwen3-vl-4b" // for `vision-capability-priming`  
-✅ "display_name": "Qwen3.5 35B", "key": "qwen/qwen3.5-35b-a3b" // a good all-round model with large context window
+✅ "display_name": "Qwen3.6 35B АЗВ.", "key": "qwen/qwen3.6-35b-a3b" // a good all-round model with large context window
 
 **Optional:**
 

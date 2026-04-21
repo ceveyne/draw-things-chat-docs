@@ -9,10 +9,11 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.32] - 2026-04-10 Revision 32
+## [0.1.32] - 2026-04-21 Revision 32
 
 ### Changed
 
+- Added support for Qwen3.6 35B АЗВ (qwen/qwen3.6-35b-a3b) as the new default LLM.
 - `generate_image`: When a reference image (`canvas`) is provided but `mode` is omitted, the call now fails with an actionable error asking the user to specify `image2image`, `edit`, or `image2video` — instead of silently falling back to text-to-image.
 - Improved support for external / 3rd-party image generation plugins.
 
