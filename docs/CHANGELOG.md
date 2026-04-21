@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.33] - 2026-04-21 Revision 33
+
+### Changed
+
+- Custom Configs now accept arbitrary postfixes (`text2image.<any>`, `image2image.<any>`, `edit.<any>`, `text2video.<any>`, `image2video.<any>`). Previously only the built-in model IDs (`auto`, `z-image`, `qwen-image`, `flux`, `ltx`, `custom`) were accepted as postfixes.
+
+---
+
 ## [0.1.32] - 2026-04-21 Revision 32
 
 ### Changed
