@@ -9,12 +9,12 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.33] - 2026-04-21 Revision 33
+## [0.1.33] - 2026-04-27 Revision 33
 
 ### Added
 
 - Added 8-bit S (`i8x`) model filenames for Z Image Turbo 1.0, Z Image Base 1.0, Qwen Image 2512, Qwen Image Edit 2511, FLUX.2 [klein] 4B, and LTX-2.3 (distilled, dev).
-- Added `z-image-1.0` capability entry for Z Image Base 1.0 (`q8p`, `q6p`, `i8x`).
+- Added support for Qwen3.6 27B (qwen/qwen3.6-27b).
 
 ### Changed
 
