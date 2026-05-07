@@ -9,6 +9,27 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.34] - 2026-05-07 Revision 34
+
+### Added
+
+- Added SeedVR2 model family support.
+- Upscale pipeline extended with a 2-pass upscale process (Pass 1: standard generation; Pass 2: SeedVR2 refinement at target resolution).
+- Added `upscale` tool.
+- Added deployment scenario examples to the setup guide. 
+
+### Changed
+
+- Updated vision instruction to improve accurate and detailed visual description.
+- `i2iProfileUsed` audit type extended to include `"refine"`.
+- Updated "LTX-2.3 22B [distilled] (6-bit)", "file": "ltx_2.3_22b_distilled_q6p.ckpt" to "LTX-2.3 22B [distilled] 1.1 (6-bit)", "file": "ltx_2.3_22b_distilled_1.1_q6p.ckpt"
+
+### Fixed
+
+- `normalizeInputBuffer` sum-constraint step: aspect ratio was distorted when both axes happened to land on different 64-multiples after independent rounding. Now uses candidate-based selection to best-preserve aspect ratio.
+
+---
+
 ## [0.1.33] - 2026-04-27 Revision 33
 
 ### Added

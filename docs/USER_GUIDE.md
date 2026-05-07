@@ -189,7 +189,8 @@ The setup requires a certain amount of patience and concentration, and to be abl
 ✅ "name": "Qwen Image Edit 2509 (6-bit)", "file": "qwen_image_edit_2509_q6p.ckpt"  
 ✅ "name": "Qwen Image Edit 2511 (6-bit)", "file": "qwen_image_edit_2511_q6p.ckpt"  
 ✅ "name": "FLUX.2 [klein] 9B KV (6-bit)", "file": "flux_2_klein_9b_kv_q6p.ckpt"
-✅ "name": "LTX-2.3 22B [distilled] (6-bit)", "file": "ltx_2.3_22b_distilled_q6p.ckpt"
+✅ "name": "LTX-2.3 22B [distilled] 1.1 (6-bit)", "file": "ltx_2.3_22b_distilled_1.1_q6p.ckpt"
+✅ "name": "SeedVR2 7B (6-bit)", "file": "seedvr2_7b_q6p.ckpt"
 
 ### Additionally, you need the following LoRAs:
 
@@ -266,6 +267,8 @@ The best experience I've had so far has been with the tool: [playbook](https://l
 - Beyond the ability to maintain the knowledge base editorially and curate its contents professionally, agents can add their own notes and update outdated information.
 - The sometimes very specific information contained in the system does not bleed into "other" topics and content of conversations. The tool can remain "always on" without increasing the token load (aside from the tool descriptions).
 - Even better might be fine-tuning the agent models — which is, however, comparatively complex and harder to keep up to date.
+
+> For an overview of supported deployment scenarios (single machine, distributed, Linux server), see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 <a id="special-features"></a>
 

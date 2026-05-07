@@ -173,6 +173,8 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 See the [draw-things-index documentation](https://github.com/ceveyne/draw-things-index-docs) for setup instructions.
 
+> For an overview of supported deployment scenarios (single machine, distributed, Linux server), see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
 ## Workflow example (Draw Things backend)
 
 ![draw-things-chat-workflow(1)](<docs/images/draw-things-chat-workflow(1).jpeg>)
