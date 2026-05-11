@@ -9,6 +9,15 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.35] - 2026-05-11 Revision 35
+
+### Changed
+
+- Switched default `edit` mode parameters from Qwen-Image to Flux.
+- Improved agent instruction for Vision Promotion.
+
+---
+
 ## [0.1.34] - 2026-05-07 Revision 34
 
 ### Added
