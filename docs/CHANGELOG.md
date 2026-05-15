@@ -14,6 +14,7 @@ Notable changes to this project will be documented in this file.
 ### Changed
 
 - Preview size for all MediaTypes (attachments, images, variants, pictures) unified under a single constraint (`w + h ≤ 1792 px`). One preview file now serves chat display, Vision Promotion, `analyse_image`, and `detect_object` consistently.
+- Updated [deployment scenarios](./DEPLOYMENT.md).
 
 ---
 
