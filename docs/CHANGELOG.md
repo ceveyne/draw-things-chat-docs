@@ -9,6 +9,22 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.37] - 2026-05-15 Revision 37
+
+### Changed
+
+- Preview size for all MediaTypes (attachments, images, variants, pictures) unified under a single constraint (`w + h ≤ 1792 px`). One preview file now serves chat display, Vision Promotion, `analyse_image`, and `detect_object` consistently.
+
+---
+
+## [0.1.36] - 2026-05-15 Revision 36
+
+### Fixed
+
+- Vision capability check now falls back to `capabilities.ts` when the server API does not return capability metadata (e.g. headless/remote servers with a plain `/v1/models` response). Models registered in `capabilities.ts` with `supportsVision: true` are now correctly accepted as agent models in such configurations.
+
+---
+
 ## [0.1.35] - 2026-05-11 Revision 35
 
 ### Changed
