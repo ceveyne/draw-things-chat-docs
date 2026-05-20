@@ -9,6 +9,20 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.38] - 2026-05-20 Revision 38
+
+### Changed
+
+- Maximum render dimensions increased to 2048 × 2048 px (`maxWidth`, `maxHeight`).
+- Agent model loading now supports any OpenAI-compatible server. When the LM Studio-proprietary `/api/v1/models` endpoint is unavailable (e.g. Unsloth Studio, RunPod vLLM, remote inference APIs), the plugin falls back to the standard `/v1/models` endpoint and validates the model against the capability registry (`capabilities.ts`). Vision gating is enforced via the registry in both paths.
+
+### Fixed
+
+- Zoom-pass audit: `inputs.canvas.original` now correctly shows the Pass-1 `backend_returned` dimensions instead of the pre-Pass-1 source canvas.
+- Zoom pass (SeedVR2 refinement) now participates correctly in the overlay/Custom Config system. The overlay mode is resolved as `zoom` instead of falling through to `img2img`, and the model identifier is passed as `undefined` (not the raw `.ckpt` filename) so no false-alarm `Unknown model` error is logged. Custom Configs keyed `zoom.auto` are respected.
+
+---
+
 ## [0.1.37] - 2026-05-15 Revision 37
 
 ### Changed
