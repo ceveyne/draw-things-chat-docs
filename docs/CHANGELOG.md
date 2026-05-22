@@ -9,6 +9,16 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.39] - 2026-05-22 Revision 39
+
+### Fixed
+
+- Progress feedback during the 2nd pass (SeedVR2 refinement) in `mode: edit` now correctly shows `2nd Pass Step x/y (n%)` instead of bare `Step x/y`.
+- Audit: `render_target.needs_upscaler` now reflects the actual zoom-pass decision instead of being recomputed from raw dimensions versus backend limits.
+- Moodboard images in `mode: edit` with explicit `width`/`height` parameters now preserve their native aspect ratio. Previously, explicit output dimensions caused moodboard inputs to adopt the output AR; only the canvas image should adopt the output AR.
+
+---
+
 ## [0.1.38] - 2026-05-20 Revision 38
 
 ### Changed

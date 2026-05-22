@@ -122,13 +122,13 @@ Currently, the tool supports `text2image`, `image2image`, `edit`, `text2video`, 
 The supported model families are: z-image, qwen-image, flux, ltx, and custom.
 The models **actually** used in the basic settings are:
 
-| Mode / Model  | auto                                         | z-image                      | qwen-image                      | flux                           | ltx                              | custom                        |
-| ------------- | -------------------------------------------- | ---------------------------- | ------------------------------- | ------------------------------ | -------------------------------- | ----------------------------- |
-| `text2image`  | z-image (`z_image_turbo_1.0_q6p.ckpt`)       | `z_image_turbo_1.0_q6p.ckpt` | `qwen_image_2512_bf16_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | `ltx_2.3_22b_distilled_q6p.ckpt` | — (via `custom_configs.json`) |
-| `image2image` | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | `z_image_turbo_1.0_q6p.ckpt` | `qwen_image_edit_2511_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | `ltx_2.3_22b_distilled_q6p.ckpt` | — (via `custom_configs.json`) |
-| `edit`        | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | —                            | `qwen_image_edit_2511_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | —                                | — (via `custom_configs.json`) |
-| `text2video`  | ltx (`ltx_2.3_22b_distilled_q6p.ckpt`)       | —                            | —                               | —                              | `ltx_2.3_22b_distilled_q6p.ckpt` | — (via `custom_configs.json`) |
-| `image2video` | ltx (`ltx_2.3_22b_distilled_q6p.ckpt`)       | —                            | —                               | —                              | `ltx_2.3_22b_distilled_q6p.ckpt` | — (via `custom_configs.json`) |
+| Mode / Model  | auto                                         | z-image                      | qwen-image                      | flux                           | ltx                                  | custom                        |
+| ------------- | -------------------------------------------- | ---------------------------- | ------------------------------- | ------------------------------ | ------------------------------------ | ----------------------------- |
+| `text2image`  | z-image (`z_image_turbo_1.0_q6p.ckpt`)       | `z_image_turbo_1.0_q6p.ckpt` | `qwen_image_2512_bf16_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | — (via `custom_configs.json`) |
+| `image2image` | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | `z_image_turbo_1.0_q6p.ckpt` | `qwen_image_edit_2511_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | — (via `custom_configs.json`) |
+| `edit`        | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | —                            | `qwen_image_edit_2511_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | —                                    | — (via `custom_configs.json`) |
+| `text2video`  | ltx (`ltx_2.3_22b_distilled_1.1_q6p.ckpt`)   | —                            | —                               | —                              | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | — (via `custom_configs.json`) |
+| `image2video` | ltx (`ltx_2.3_22b_distilled_1.1_q6p.ckpt`)   | —                            | —                               | —                              | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | — (via `custom_configs.json`) |
 
 The basic idea is: If _no_ model is explicitly selected, a proven, fast model is used. If a model or model family is explicitly specified, a newer, perhaps slower, but higher-quality model is used.
 
@@ -188,15 +188,15 @@ The setup requires a certain amount of patience and concentration, and to be abl
 ✅ "name": "Qwen Image 2512 (BF16, 6-bit)", "file": "qwen_image_2512_bf16_q6p.ckpt"  
 ✅ "name": "Qwen Image Edit 2509 (6-bit)", "file": "qwen_image_edit_2509_q6p.ckpt"  
 ✅ "name": "Qwen Image Edit 2511 (6-bit)", "file": "qwen_image_edit_2511_q6p.ckpt"  
-✅ "name": "FLUX.2 [klein] 9B KV (6-bit)", "file": "flux_2_klein_9b_kv_q6p.ckpt"
-✅ "name": "LTX-2.3 22B [distilled] 1.1 (6-bit)", "file": "ltx_2.3_22b_distilled_1.1_q6p.ckpt"
-✅ "name": "SeedVR2 7B (6-bit)", "file": "seedvr2_7b_q6p.ckpt"
+✅ "name": "FLUX.2 [klein] 9B KV (6-bit)", "file": "flux_2_klein_9b_kv_q6p.ckpt"  
+✅ "name": "LTX-2.3 22B [distilled] 1.1 (6-bit)", "file": "ltx_2.3_22b_distilled_1.1_q6p.ckpt"  
+✅ "name": "SeedVR2 7B (6-bit)", "file": "seedvr2_7b_q6p.ckpt"  
 
 ### Additionally, you need the following LoRAs:
 
 ✅ "name": "Qwen Image 2512 Lightning 4-Step v1.0", "file": "qwen_image_2512_lightning_4_step_v1.0_lora_f16.ckpt"  
 ✅ "name": "Qwen Image Edit 2509 Lightning 4-Step v1.0", "file": "qwen_image_edit_2509_lightning_4_step_v1.0_lora_f16.ckpt"  
-✅ "name": "Qwen Image Edit 2511 Lightning 4-Step v1.0", "file": "qwen_image_edit_2511_lightning_4_step_v1.0_lora_f16.ckpt"
+✅ "name": "Qwen Image Edit 2511 Lightning 4-Step v1.0", "file": "qwen_image_edit_2511_lightning_4_step_v1.0_lora_f16.ckpt"  
 
 ### Draw Things Backend Settings:
 

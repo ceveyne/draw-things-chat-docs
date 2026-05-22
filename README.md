@@ -38,6 +38,8 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 ## Setup
 
+> For an overview of supported deployment scenarios (single machine, distributed, Linux server, runpod), see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
 <a id="setup-mac-draw-things"></a>
 
 ### Draw Things user on Mac
@@ -172,8 +174,6 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 ### Invoke formerly generated images: Metadata Query plugin draw-things-index
 
 See the [draw-things-index documentation](https://github.com/ceveyne/draw-things-index-docs) for setup instructions.
-
-> For an overview of supported deployment scenarios (single machine, distributed, Linux server), see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## Workflow example (Draw Things backend)
 
