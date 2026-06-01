@@ -248,7 +248,7 @@ used only for model management and editing `custom_configs.json`).
                                  │
                                  ▼
           ┌─────────────────────────────────────────────┐
-          │  runpod Pod (GPU, H100-80 GB)               │
+          │  runpod Pod (GPU, H200 SXM 141 GB VRAM)     │
           │                                             │
           │  LM Studio headless (llmster)               │
           │  port: 1244  (HTTP)                         │
@@ -257,7 +257,7 @@ used only for model management and editing `custom_configs.json`).
           │  port: 7869  (gRPC, TLS)                    │
           │                                             │
           │  ┌───────────────────────────────────────┐  │
-          │  │  Network Volume  180 GB               │  │
+          │  │  Network Volume  200 GB               │  │
           │  │  /workspace/models/draw-things        │  │
           │  │  /data/models/draw-things/custom.json │  │
           │  │  /workspace/models/lms                │  │

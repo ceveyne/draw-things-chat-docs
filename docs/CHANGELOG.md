@@ -9,6 +9,19 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.40] - 2026-06-02 Revision 40/41
+
+### Added
+
+- Inference timing metrics are now logged after each generation: `[Timing] TTFT: X.XX s | Y.Y tok/sec | N tokens | Total: Z.ZZ s`. TTFT (Time to First Token) measures prompt-processing duration; tok/sec measures generation speed. Both values are written to the plugin log and enable direct backend comparison (MLX vs. GGUF) under identical conditions.
+- Substring alias matching added to the capability registry: model IDs containing `qwen36-27b` or `qwen36-35b` now resolve to the corresponding Qwen 3.6 capability entry, enabling derivative / fine-tuned model names to be recognised automatically.
+
+### Changed
+
+- Removed the undici `bodyTimeout` / `headersTimeout` limits (set to `0`) so long prompt-processing phases — where the server is computing but has not yet emitted the first streaming token — no longer cause a `UND_ERR_BODY_TIMEOUT` abort. The OpenAI SDK client timeout is also set to `0` for the same reason.
+
+---
+
 ## [0.1.39] - 2026-05-22 Revision 39
 
 ### Fixed
@@ -66,7 +79,7 @@ Notable changes to this project will be documented in this file.
 - Added SeedVR2 model family support.
 - Upscale pipeline extended with a 2-pass upscale process (Pass 1: standard generation; Pass 2: SeedVR2 refinement at target resolution).
 - Added `upscale` tool.
-- Added deployment scenario examples to the setup guide. 
+- Added deployment scenario examples to the setup guide.
 
 ### Changed
 
