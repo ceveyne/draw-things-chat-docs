@@ -9,7 +9,15 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.40] - 2026-06-02 Revision 40/41
+## [0.1.42] - 2026-06-04 Revision 42
+
+### Fixed
+
+- External `generate_image` results (backend → Images, `image-*-iN.png`) were injected twice into the chat: once by the unified harvest/toolParams pipeline (Block 1, correct) and once by the legacy per-image injection path (Block 2, duplicate). Block 2 now filters `basenamesRaw` to `generated-image-*` filenames only; `image-*-iN.png` files are exclusively handled by Block 1.
+
+---
+
+## [0.1.41] - 2026-06-02 Revision 40/41
 
 ### Added
 
