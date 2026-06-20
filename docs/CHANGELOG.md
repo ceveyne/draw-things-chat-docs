@@ -9,7 +9,15 @@ Notable changes to this project will be documented in this file.
 
 ---
 
-## [0.1.42] - 2026-06-04 Revision 42
+## [0.1.43] - 2026-06-20 Revision 43
+
+### Fixed
+
+- Restored automatic chat display of generated Images (`iN`) when `PREVIEW_IN_CHAT=false`; `image-*-iN` results are again injected into the agent turn without requiring inline preview output from the generator plugin.
+
+---
+
+## [0.1.42] - 2026-06-17 Revision 42
 
 ### Fixed
 
