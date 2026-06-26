@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.44] - 2026-06-26 Revision 44
+
+### Added
+
+- Added support for **analyse-image** version `0.1.10 (Revision 10)` or higher.
+
+---
+
 ## [0.1.43] - 2026-06-20 Revision 43
 
 ### Fixed
