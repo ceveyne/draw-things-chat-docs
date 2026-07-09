@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.45] - 2026-07-09 Revision 45
+
+### Added
+
+- Added support for new plugin **find-image**.
+
+---
+
 ## [0.1.44] - 2026-06-26 Revision 44
 
 ### Added
