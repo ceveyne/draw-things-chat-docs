@@ -9,6 +9,19 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.46] - 2026-07-17 Revision 46
+
+### Changed
+
+- New image previews now stay compact and consistent across chat media.
+- Image previews now use their actual file type when sent to vision models.
+
+### Fixed
+
+- Images found via other tools (e.g. **find-image**) could incorrectly show up as newly generated variants.
+
+---
+
 ## [0.1.45] - 2026-07-09 Revision 45
 
 ### Added
