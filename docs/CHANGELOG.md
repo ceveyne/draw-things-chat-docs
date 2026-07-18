@@ -9,6 +9,15 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.47] - 2026-07-18 Revision 47
+
+### Changed
+
+- Picture search results now include their usable `pN` indexes.
+- Improved tool descriptions
+
+---
+
 ## [0.1.46] - 2026-07-17 Revision 46
 
 ### Changed
