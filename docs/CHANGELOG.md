@@ -4,8 +4,16 @@ Notable changes to this project will be documented in this file.
 
 ## Distribution
 
-- **Source Code:** [LM Studio Hub](https://lmstudio.ai/ceveyne/draw-things-chat/revisions)
+- **Source Code:** [LM Studio Hub](https://lmstudio.ai/ceveyne/draw-things-chat)
 - **Documentation:** [GitHub Repository](https://github.com/ceveyne/draw-things-chat-docs)
+
+---
+
+## [0.1.48] - 2026-07-23 Revision 48
+
+### Added
+
+- Added support for image tags. When using the [find-image plugin](https://lmstudio.ai/ceveyne/find-image), images can now be tagged and found with exact tag filters.
 
 ---
 
