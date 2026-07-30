@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.49] - 2026-07-30 Revision 49
+
+### Changed
+
+- Generated PNGs now include their creation time in metadata.
+
+---
+
 ## [0.1.48] - 2026-07-23 Revision 48
 
 ### Added
