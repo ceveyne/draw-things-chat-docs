@@ -185,6 +185,7 @@ The setup requires a certain amount of patience and concentration, and to be abl
 ### Start by downloading the models from the table above using the Draw Things Client:
 
 ✅ "name": "Z Image Turbo 1.0 (6-bit)", "file": "z_image_turbo_1.0_q6p.ckpt"  
+✅ "name": "Krea 2 Turbo (6-bit)", "file": "krea_2_turbo_q6p.ckpt"  
 ✅ "name": "Qwen Image 2512 (BF16, 6-bit)", "file": "qwen_image_2512_bf16_q6p.ckpt"  
 ✅ "name": "Qwen Image Edit 2509 (6-bit)", "file": "qwen_image_edit_2509_q6p.ckpt"  
 ✅ "name": "Qwen Image Edit 2511 (6-bit)", "file": "qwen_image_edit_2511_q6p.ckpt"  

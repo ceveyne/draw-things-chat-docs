@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.50] - 2026-08-11 Revision 50
+
+### Added
+
+- Added support for Krea 2 Turbo and Krea 2 Raw. 
+
+---
+
 ## [0.1.49] - 2026-07-30 Revision 49
 
 ### Changed
