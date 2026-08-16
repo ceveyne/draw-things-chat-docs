@@ -9,11 +9,23 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.51] - 2026-08-16 Revision 51
+
+### Added
+
+- Added support for Qwen3.8 27B.
+
+### Fixed
+
+- Fixed rare text corruption (scrambled or missing words) that could appear right after a thinking phase, especially just before a tool call.
+
+---
+
 ## [0.1.50] - 2026-08-11 Revision 50
 
 ### Added
 
-- Added support for Krea 2 Turbo and Krea 2 Raw. 
+- Added support for Krea 2 Turbo and Krea 2 Raw.
 
 ---
 
