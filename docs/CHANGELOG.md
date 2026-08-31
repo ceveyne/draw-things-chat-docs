@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.52] - 2026-08-31 Revision 52
+
+### Changed
+
+- Updated USER_GUIDE.md.
+
+---
+
 ## [0.1.51] - 2026-08-16 Revision 51
 
 ### Added
