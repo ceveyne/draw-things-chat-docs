@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.53] - 2026-10-04 Revision 53
+
+### Added
+
+- Added support for Qwen Image 2.1 and MiniMax H3.
+
+---
+
 ## [0.1.52] - 2026-08-31 Revision 52
 
 ### Changed
