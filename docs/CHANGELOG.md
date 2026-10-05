@@ -18,6 +18,8 @@ Notable changes to this project will be documented in this file.
 ## Fixed
 
 - Corrected the reported image size to match the delivered image when upscaling was applied.
+- Custom Configs presets for models with a dotted name (e.g. Qwen Image 2.1) are now applied.
+- `image2video` with MiniMax H3 family: the moodboard images (last frame, references) were silently ignored and are now used correctly.
 
 ## [0.1.53] - 2026-10-04 Revision 53
 
