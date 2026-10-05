@@ -9,6 +9,16 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.54] - 2026-10-05 Revision 54
+
+### Changed
+
+- Optimized diffusion settings for Qwen Image 2.1 and MiniMax H3.
+
+## Fixed
+
+- Corrected the reported image size to match the delivered image when upscaling was applied.
+
 ## [0.1.53] - 2026-10-04 Revision 53
 
 ### Added
