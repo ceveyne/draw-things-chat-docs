@@ -9,6 +9,14 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.55] - 2026-10-06 Revision 55
+
+### Fixed
+
+- Restored image-decoding compatibility for older model families.
+
+---
+
 ## [0.1.54] - 2026-10-05 Revision 54
 
 ### Changed
