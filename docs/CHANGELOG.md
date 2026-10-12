@@ -9,6 +9,18 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.56] - 2026-10-07 Revision 56
+
+### Added
+
+- Added support for Qwen Image 2.1 Turbo model.
+
+### Fixed
+
+- A custom "auto" preset defined in Draw Things' custom configs could be skipped if a plugin passed an empty model value instead of omitting it.
+
+---
+
 ## [0.1.55] - 2026-10-06 Revision 55
 
 ### Fixed
