@@ -125,7 +125,7 @@ The models **actually** used in the basic settings are:
 | Mode / Model  | auto                                         | z-image                      | krea                    | qwen-image                      | qwen-image-2.1            | qwen-image-2.1-turbo            | flux                           | ltx                                  | minimax                     | minimax-ref                  | custom                        |
 | ------------- | -------------------------------------------- | ---------------------------- | ----------------------- | ------------------------------- | ------------------------- | ------------------------------- | ------------------------------ | ------------------------------------ | --------------------------- | ---------------------------- | ----------------------------- |
 | `text2image`  | z-image (`z_image_turbo_1.0_q6p.ckpt`)       | `z_image_turbo_1.0_q6p.ckpt` | `krea_2_turbo_q6p.ckpt` | `qwen_image_2512_bf16_q6p.ckpt` | `qwen_image_2.1_q6p.ckpt` | `qwen_image_2.1_turbo_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | `minimax_h3_fl2va_q6p.ckpt` | `minimax_h3_ref2va_q6p.ckpt` | — (via `custom_configs.json`) |
-| `image2image` | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | `z_image_turbo_1.0_q6p.ckpt` | `krea_2_turbo_q6p.ckpt` | `qwen_image_edit_2511_q6p.ckpt` | `qwen_image_2.1_q6p.ckpt` | `qwen_image_2.1_turbo_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | `minimax_h3_fl2va_q6p.ckpt` | `minimax_h3_ref2va_q6p.ckpt` | — (via `custom_configs.json`) |
+| `image2image` | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | `z_image_turbo_1.0_q6p.ckpt` | `krea_2_turbo_q6p.ckpt` | `qwen_image_edit_2511_q6p.ckpt` | —                         | —                               | `FLUX.2 [klein] 9B KV (6-bit)` | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | `minimax_h3_fl2va_q6p.ckpt` | `minimax_h3_ref2va_q6p.ckpt` | — (via `custom_configs.json`) |
 | `edit`        | qwen-image (`qwen_image_edit_2509_q6p.ckpt`) | —                            | —                       | `qwen_image_edit_2511_q6p.ckpt` | `qwen_image_2.1_q6p.ckpt` | `qwen_image_2.1_turbo_q6p.ckpt` | `FLUX.2 [klein] 9B KV (6-bit)` | —                                    | —                           | —                            | — (via `custom_configs.json`) |
 | `text2video`  | ltx (`ltx_2.3_22b_distilled_1.1_q6p.ckpt`)   | —                            | —                       | —                               | —                         | —                               | —                              | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | `minimax_h3_fl2va_q6p.ckpt` | `minimax_h3_ref2va_q6p.ckpt` | — (via `custom_configs.json`) |
 | `image2video` | ltx (`ltx_2.3_22b_distilled_1.1_q6p.ckpt`)   | —                            | —                       | —                               | —                         | —                               | —                              | `ltx_2.3_22b_distilled_1.1_q6p.ckpt` | `minimax_h3_fl2va_q6p.ckpt` | `minimax_h3_ref2va_q6p.ckpt` | — (via `custom_configs.json`) |
@@ -295,19 +295,57 @@ Those of you who have lovingly maintained your own **Draw Things** configuration
 
 For the settings to take effect, you must use the following naming scheme:
 
-| Mode / Model  | auto               | z-image               | krea               | qwen-image               | qwen-image-2.1               | qwen-image-2.1-turbo               | flux               | ltx               | minimax               | minimax-ref               | custom               |
-| ------------- | ------------------ | --------------------- | ------------------ | ------------------------ | ---------------------------- | ---------------------------------- | ------------------ | ----------------- | --------------------- | ------------------------- | -------------------- |
-| `text2image`  | `text2image.auto`  | `text2image.z-image`  | `text2image.krea`  | `text2image.qwen-image`  | `text2image.qwen-image-2.1`  | `text2image.qwen-image-2.1-turbo`  | `text2image.flux`  | `text2image.ltx`  | —                     | —                         | `text2image.custom`  |
-| `image2image` | `image2image.auto` | `image2image.z-image` | `image2image.krea` | `image2image.qwen-image` | `image2image.qwen-image-2.1` | `image2image.qwen-image-2.1-turbo` | `image2image.flux` | `image2image.ltx` | —                     | —                         | `image2image.custom` |
-| `edit`        | `edit.auto`        | —                     | —                  | `edit.qwen-image`        | `edit.qwen-image-2.1`        | `edit.qwen-image-2.1-turbo`        | `edit.flux`        | —                 | —                     | —                         | `edit.custom`        |
-| `text2video`  | `text2video.auto`  | —                     | —                  | —                        | —                            | —                                  | —                  | `text2video.ltx`  | `text2video.minimax`  | `text2video.minimax-ref`  | `text2video.custom`  |
-| `image2video` | `image2video.auto` | —                     | —                  | —                        | —                            | —                                  | —                  | `image2video.ltx` | `image2video.minimax` | `image2video.minimax-ref` | `image2video.custom` |
+| Mode / Model  | auto               | z-image               | krea               | qwen-image               | qwen-image-2.1              | qwen-image-2.1-turbo              | flux               | ltx               | minimax               | minimax-ref               | custom               |
+| ------------- | ------------------ | --------------------- | ------------------ | ------------------------ | --------------------------- | --------------------------------- | ------------------ | ----------------- | --------------------- | ------------------------- | -------------------- |
+| `text2image`  | `text2image.auto`  | `text2image.z-image`  | `text2image.krea`  | `text2image.qwen-image`  | `text2image.qwen-image-2.1` | `text2image.qwen-image-2.1-turbo` | `text2image.flux`  | `text2image.ltx`  | —                     | —                         | `text2image.custom`  |
+| `image2image` | `image2image.auto` | `image2image.z-image` | `image2image.krea` | `image2image.qwen-image` | —                           | —                                 | `image2image.flux` | `image2image.ltx` | —                     | —                         | `image2image.custom` |
+| `edit`        | `edit.auto`        | —                     | —                  | `edit.qwen-image`        | `edit.qwen-image-2.1`       | `edit.qwen-image-2.1-turbo`       | `edit.flux`        | —                 | —                     | —                         | `edit.custom`        |
+| `text2video`  | `text2video.auto`  | —                     | —                  | —                        | —                           | —                                 | —                  | `text2video.ltx`  | `text2video.minimax`  | `text2video.minimax-ref`  | `text2video.custom`  |
+| `image2video` | `image2video.auto` | —                     | —                  | —                        | —                           | —                                 | —                  | `image2video.ltx` | `image2video.minimax` | `image2video.minimax-ref` | `image2video.custom` |
 
 ![custom_configs_draw_things(1)](<images/custom_configs_draw_things(1).jpeg>)
 
 ![custom_configs_draw_things(2)](<images/custom_configs_draw_things(2).jpeg>)
 
 👆 Restart LM Studio after creating new custom_configs or changing existing ones so that **draw-things-chat** reads the updated presets.
+
+### Run in Background
+
+Normally the chat waits until an image is finished. With `runInBackground`, the Agent model starts a generation and gets a `requestId` back immediately. The chat stays usable while Draw Things renders in a separate background process. This is useful for sweeps and variations: the Agent can queue several renders in a row instead of waiting for each one.
+
+Just ask for it, for example: "Render these four variants in the background and tell me when they are done."
+
+**How it works**
+
+- Background renders run one after another, in the order they were started. Draw Things processes one job at a time.
+- Background renders are available for `generate_image`, not for `upscale`.
+- The background process starts when the first job is submitted and exits on its own shortly after the last job is delivered.
+- If a render reports no progress for 5 minutes, it is marked as `failed`. A render that has produced no result after 31 minutes is abandoned so that the queue keeps moving.
+- The setting that unloads the Agent model during rendering is not applied to background renders. The Agent model stays loaded.
+
+**Following the progress**
+
+The Agent uses the tool `request_progress`:
+
+- Without a `requestId`, it lists all background renders of the current chat, for example `- 1792244947645-hafiuo [running]: Step 4/8 (44%), ~1m 01s left`. The text is the same progress display you see for a normal render; the remaining time appears from the second step on. Possible states are `queued`, `running`, `completed`, `failed` and `cancelled`.
+- With a `requestId`, it returns the full generation details of that one render (size, steps, model, inference time and so on). The image itself is not shown again.
+
+**Getting the images**
+
+Finished images appear automatically at the start of the next turn, i.e. after your next message. LM Studio plugins cannot post messages by themselves while the chat is idle, so a finished render waits until you write again. A failed render shows up as a warning line instead. The Agent can also fetch the result at any time with `request_progress`.
+
+**Cancelling**
+
+Tell the Agent to cancel a render, or to cancel everything that is still queued. It uses `request_progress` with the `requestId` and `cancel: true`:
+
+- A render that is still waiting in the queue is removed and never reaches Draw Things.
+- A running render is aborted, which frees the GPU and memory in Draw Things.
+
+The Agent only reports success when it has actually seen the result. There are three possible answers: the render was cancelled; the render had already finished before the cancel took effect (the image is then kept and delivered as usual); or the render was still running after 10 seconds and the cancellation could not be confirmed. A render that is already nearly done can no longer be stopped, so the second answer is not an error.
+
+If you stop a normal (non-background) generation with the stop button in LM Studio, the render in Draw Things is cancelled as well.
+
+Limitation: A render that goes through the Draw Things HTTP API instead of gRPC cannot be aborted. It runs to the end and is reported as `completed`.
 
 <a id="known-issues-and-solutions"></a>
 

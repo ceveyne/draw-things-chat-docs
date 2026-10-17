@@ -9,6 +9,20 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.57] - 2026-10-17 Revision 57
+
+### Added
+
+- Run in Background: `generate_image` can render in the background (`runInBackground`); `request_progress` shows progress, returns results and cancels queued or running renders.
+- The progress display shows the estimated remaining time from the second sampling step on.
+
+### Changed
+
+- Disabled `mode: image2image` for models Qwen Image 2.1 and Qwen Image 2.1 Turbo. Updated skill accordingly.
+- Refined `mode: text2image` defaults for model FLUX.2 [klein].
+
+---
+
 ## [0.1.56] - 2026-10-07 Revision 56
 
 ### Added
