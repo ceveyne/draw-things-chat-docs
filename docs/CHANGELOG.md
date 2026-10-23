@@ -9,6 +9,26 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.58] - 2026-10-23 Revision 58
+
+### Added
+
+- Added support for Flux.3 [klein], including prompt upsampling.
+
+### Changed
+
+- Raised the input size limit for edit/image2image renders (width + height) from 1344 to 2240 px. Edits now keep noticeably more detail, and sources up to e.g. 960 x 1280 px (portrait) no longer need a zoom pass.
+- Log lines written during a render (e.g. the gRPC progress steps) now carry the render's requestId, so concurrent renders can be told apart in the log.
+- Prompt upsampling errors now name the URL and the real cause (e.g. `ECONNREFUSED`) instead of a bare "fetch failed". If the configured server is unreachable or lacks the model, the other of `1234`/`1235` is tried automatically, because Bionic moves to `1234` while LM Studio runs. Custom ports are used as configured.
+
+### Fixed
+
+- Background renders are no longer marked as failed after a fixed time without progress ("treating as stalled"). A silent render stays `running` and its status says how long it has been quiet; it ends with the image, with the backend's error, or when you cancel it. This also makes hour-long video renders safe. A crashed backend process is still detected, now through a heartbeat instead of progress timing.
+- Fixed `variants` greater than 1 delivering only one image when the render needs the second (upscaling) pass: every variant now gets its own second pass. Previously only the first one was upscaled and the others were silently dropped.
+- Fixed the Draw Things backend dropping the connection after inference for edit/image2image renders with a larger target size (e.g. 1248 x 1680): the second-pass canvas is now always normalized to a multiple of 64.
+
+---
+
 ## [0.1.57] - 2026-10-17 Revision 57
 
 ### Added
