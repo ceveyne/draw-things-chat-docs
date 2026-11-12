@@ -40,6 +40,8 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 
 > For an overview of supported deployment scenarios (single machine, distributed, Linux server, runpod), see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
+**Do you already use models in the Draw Things app? Then you can start right away.** **draw-things-chat** can use every model you use there. Without any configuration the models run with the "Recommended Settings" of Draw Things (plus tuned settings for some families). Name a model by family (`krea_2`), model name or file name; the tool lists what is installed. The presets below are only needed if you want different defaults, or a different model for a family. Very large output sizes use a second pass with **SeedVR2 7B** (any quantization), so install it in Draw Things if you want them.
+
 <a id="setup-mac-draw-things"></a>
 
 ### Draw Things user on Mac
@@ -51,6 +53,8 @@ As it's questionable if simply plugging Draw Things into LM Studio might be of a
 ![custom_configs_auto_draw_things(1)](<docs/images/custom_configs_auto_draw_things(1).jpeg>)
 
 ![custom_configs_auto_draw_things(2)](<docs/images/custom_configs_auto_draw_things(2).jpeg>)
+
+- `<mode>.auto` changes the settings of the default model of the mode, `<mode>.<family>` (e.g. `text2image.krea_2`) those of a model family including the model used, and `<mode>.<your own name>` is a preset you name freely. An image size saved in a `text2image` or `text2video` preset is used unless the agent asks for another one.
 
 - ⚠️ Note: These settings are stored to `<Your_configured_Model-Folder>/custom_configs.json`. It might be a good idea to keep this file in sync with the one located inside your Default-Model-Folder (`~/Library/Containers/com.liuliu.draw-things/Data/Documents/Models/custom_configs.json`)
 

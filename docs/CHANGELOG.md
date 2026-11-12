@@ -9,6 +9,35 @@ Notable changes to this project will be documented in this file.
 
 ---
 
+## [0.1.60] - 2026-11-12 Revision 60
+
+### Added
+
+- The audit log now records everything the prompt upsampling model received and returned: the images it saw, every request (task, text, hash of the system prompt) with its raw answer.
+- Support for **MOSS Image** (`moss_image`), including a prompting guide in the skill.
+
+### Changed
+
+- Using the models you already have takes no configuration: every model you use in the Draw Things app is available, and the Agent sees which ones are installed. Models without tuned settings of ours run with the Draw Things "Recommended Settings", a missing default model is replaced by the newest installed one, and the image size of your saved `text2image`/`text2video` preset is used.
+- Skills and user documentation updated.
+- Changed default image2image model to Krea 2 Turbo.
+
+### Fixed
+
+- Fixed reference images being resolved inconsistently. A `canvas` or `moodboard` image is now always looked up in the chat's media state first, however it is given (`aN`/`iN`/`pN`/`vN`, the original filename or the preview filename). A `detect_object`, `annotate_image` or `mask` result is never used as the reference while its source image is known: the original it was made from is used instead. Only a reference the media state does not know is used as given.
+
+---
+
+## [0.1.59] - 2026-10-25 Revision 59
+
+### Added
+
+- Generated images now also embed the complete Draw Things generation configuration (`v2`), in the same format Draw Things writes itself. It records what was actually sent to the server, including LoRA weights.
+
+### Changed
+
+- ***
+
 ## [0.1.58] - 2026-10-24 Revision 58
 
 ### Added
